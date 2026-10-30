@@ -127,7 +127,9 @@ SEO: unique titles and meta descriptions, canonical links, Open Graph/Twitter ta
 -Deployed the website.
 
 # Enhancing Functionality and SEO
+
 ## JavaScript Enhancements
+
 ### Interactive Elements
 Feature	Where	How it works
 Accordion	About page	Each section (Mission, Vision, Values, etc.) collapses and expands. Built with DOM manipulation: the script wraps each section's content and adds an accessible toggle button (aria-expanded, aria-controls). Animated with a CSS grid-row transition.
@@ -142,6 +144,7 @@ Dynamic services: The services table on services.html is rebuilt from data/servi
 Search, filter and sort: Visitors can search by keyword, filter by category (Massage, Face & Body, Nails), show only walk-in services, and sort by name or price (low to high / high to low). A live result count is announced to screen readers (role="status").
 Booking shortcut: Each service row has a "Book" link (enquiries.html?service=...) that pre-selects that service in the booking form.
 Progressive enhancement: The full table remains in the HTML, so search engines and users without JavaScript still see all services. If the JSON cannot be loaded, the static table is left in place.
+
 ### Form Validation (all forms)
 
 Client-side validation runs on submit and live on blur/input, with accessible error messages (role="alert", aria-invalid):
